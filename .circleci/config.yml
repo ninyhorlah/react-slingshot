@@ -19,7 +19,7 @@ jobs:
       - image: circleci/node:13.8.0
     steps: 
       - checkout
-      - attach_to_workspace:
+      - attach_workspace:
           at: ~/
       - run: mkdir -p tested
       - run: npm run test > ~/tested
@@ -33,7 +33,7 @@ jobs:
       - image: circleci/node:13.8.0
     steps: 
       - checkout
-      - attach_to_workspace:
+      - attach_workspace:
           at: ~/
       - run: npm audit
 
