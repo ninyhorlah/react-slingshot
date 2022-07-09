@@ -23,7 +23,7 @@ jobs:
       - checkout
       - run: npm audit
 
-worksflows:
+workflows:
   ci-integration:
     jobs:
       - build 
